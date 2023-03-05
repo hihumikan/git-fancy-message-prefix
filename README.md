@@ -1,58 +1,24 @@
-# Git Fancy Message Prefix
+# これは何?
 
-A Git prepare-commit-msg hook for fancy commit message
+[negokaz/git-fancy-message-prefix](https://github.com/negokaz/git-fancy-message-prefix)
 
-Inspired by:
+からforkしてprefixを追加したものです。原作者様には感謝します。
 
-- [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/v1.7.2/DEVELOPERS.md#type)
-- [Git Commit message Emoji · GitHub](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)
 
-## Feature
-
-### Add an emoji to prefix of commit message automatically
-
-![](docs/img/commit-with-message.gif)
-
-### Commit message template
-
-![](docs/img/commit-template.gif)
-
-## Install
-
-Run following command in your git working directory
-
-### bash/zsh/fish
-
-**English version**
+## Usage
 
 ```bash
-curl https://raw.githubusercontent.com/negokaz/git-fancy-message-prefix/master/prepare-commit-msg.en -o .git/hooks/prepare-commit-msg && chmod +x .git/hooks/prepare-commit-msg
+curl https://raw.githubusercontent.com/hihumikan/git-fancy-message-prefix/master/prepare-commit-msg.ja -o .git/hooks/prepare-commit-msg && chmod +x .git/hooks/prepare-commit-msg
 ```
 
-**Japanese version**
+## Licence
 
-```bash
-curl https://raw.githubusercontent.com/negokaz/git-fancy-message-prefix/master/prepare-commit-msg.ja -o .git/hooks/prepare-commit-msg && chmod +x .git/hooks/prepare-commit-msg
-```
+本ソフトウェアはMITライセンスで公開されています（LICENSEを参照）。
 
-## Customize
+fork元のライセンスに従います。
 
-You can add original prefix and emoji by adding an entry to `templates` function.
+https://github.com/hihumikan/git-fancy-message-prefix/blob/master/LICENSE#L1
 
-```bash
-# .git/hooks/prepare-commit-msg
+## 備考
 
-function templates {
-# format:
-#
-#   prefix:   emoji(code)   description
-#
-# Full Emoji List: https://unicode.org/emoji/charts/full-emoji-list.html
-cat <<EOF
-fizz:     \U1f600   This is an original prefix
-feat:     \U2728    A new feature
-fix:      \U1f41e   A bug fix
-...
-EOF
-}
-```
+https://blog.opuappnavi.com/post/github-fork-mit/
