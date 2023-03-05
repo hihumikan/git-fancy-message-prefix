@@ -19,6 +19,12 @@ perf:     \U1f680   パフォーマンス改善のためのコード修正
 test:     \U1f6a8   テストの追加や既存テストの修正
 chore:    \U1f477   ビルドプロセスやドキュメント生成のような補助ツールやライブラリの変更
 merge:    \U1f500
+del:     \U1f5d1   削除
+disable:  \U1f6ab   無効化
+enable:   \U1f6a9   有効化
+upgrade:  \U1f4e1   アップグレード
+move:     \U1f4e2   移動
+rename:   \U1f4dd   名前変更
 EOF
 # "merge:" is a special prefix to create merge commit message.
 }
